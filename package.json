@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-js": "js",
+    "build-js:dev": "tsc -w"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.25.0",
     "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4"
   }
 }
