@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "build-js": "js",
+    "build-js": "tcs",
     "build-js:dev": "tsc -w"
   },
   "keywords": [],
