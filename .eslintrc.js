@@ -11,7 +11,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    rules: {"@typescript-eslint/consistent-type-definitions": ["error", "interface"]
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    "no-plusplus": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
+  },
 };
