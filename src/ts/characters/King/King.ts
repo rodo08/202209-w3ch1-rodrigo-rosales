@@ -1,6 +1,7 @@
 import Character from "../Character.js";
+import KingStructure from "./types.js";
 
-class King extends Character {
+class King extends Character implements KingStructure {
   constructor(
     name: string,
     family: string,
@@ -11,7 +12,7 @@ class King extends Character {
   }
 
   communicate(): string {
-    return `${super.communicate()}Vais a morir todos`;
+    return `${super.communicate()}You're all gonna die`;
   }
 }
 
